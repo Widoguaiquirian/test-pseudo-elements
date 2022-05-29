@@ -1,0 +1,104 @@
+/*CSS Stylesheet T.O.C. - Table of contents
+Created XX April XXXX
+Last update April XX: 
+
+
+Compatible Browser:
+Firefox V.85.0.2 (64-bit)
+Chrome V.89.0.4389.90 (Build oficial) (64 bits)
+Edge V.89.0.774.54 (Compilación oficial) (64 bits)
+Safari V. 
+
+
+=RESET % CONDITIONAL COMMENT
+=GENERAL
+=LAYOUT:
+=PAGES
+
+      =index
+
+/*       RESET      */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, var, b, u, i, center,
+dl, dt, dd, ol, li, fieldset, form, label, legend, caption, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block
+}
+
+body {
+  line-height: 1.5
+}
+
+
+/*///////////////////////GENERAL///////////////////////////*/
+
+
+p{
+  display: inline-block;
+  font-size: 18px;
+}
+
+section{
+  height: 800px;
+  margin: 0 auto;
+  width: 800px;
+}
+
+h1{
+  font-size: 32px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+div{
+  background-color: lightblue;
+  height: auto;
+  margin: 0 auto 5px auto;
+  width: 750px;
+}
+
+.before::before{
+  background-color: red;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+}
+
+.after::after{
+  background-color: red;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+}
+
+ul{
+  margin: 0;
+}
+
+.marker ul li::marker{
+  content: "🚓";
+}
+
+.selection p::selection{
+  background-color: pink;
+}
+
+.first-line p::first-line{
+  color: green;
+}
+
+.first-letter p::first-letter{
+  color: pink;
+  font-size: 45px;
+  margin-right: 7px;
+  text-shadow: 5px 5px black;
+}
